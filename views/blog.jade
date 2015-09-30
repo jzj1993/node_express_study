@@ -1,0 +1,10 @@
+extends layout
+
+block style
+  link(rel='stylesheet', href='../markdown.css', type="text/css")
+  link(rel='stylesheet', href='../github.css', type="text/css")
+
+block content
+  if (h1_title != null )
+    h1= h1_title
+  div.blog_main !{blog_content}
